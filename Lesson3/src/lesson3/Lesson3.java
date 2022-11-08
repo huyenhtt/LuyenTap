@@ -1,0 +1,61 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package lesson3;
+
+/**
+ *
+ * @author Admin
+ */
+public class Lesson3 {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+//        int arr[][]=new int[2][];//2 dòng
+//       arr[0] = new int[3];
+// 
+//        // Second row has 2 columns
+//        arr[1] = new int[2];
+// 
+//        // Initializing array
+//        int count = 0;
+//        for (int i = 0; i < arr.length; i++)
+//            for (int j = 0; j < arr[i].length; j++)
+//                arr[i][j] = count++;
+// 
+//        // Displaying the values of 2D Jagged array
+//        System.out.println("Contents of 2D Jagged Array");
+//        for (int i = 0; i < arr.length; i++) {
+//            for (int j = 0; j < arr[i].length; j++)
+//                System.out.print(arr[i][j] + " ");
+//            System.out.println();
+//        }
+//        
+int r=5;
+ // Declaring 2-D array with 5 rows
+        int arr[][] = new int[r][];
+ 
+        // Creating a 2D array such that first row
+        // has 1 element, second row has two
+        // elements and so on.
+        for (int i = 0; i < arr.length; i++)
+            arr[i] = new int[i + 1];
+ 
+        // Initializing array
+        int count = 0;
+        for (int i = 0; i < arr.length; i++)
+            for (int j = 0; j < arr[i].length; j++)
+                arr[i][j] = count++;
+ 
+        // Displaying the values of 2D Jagged array
+        System.out.println("Contents of 2D Jagged Array");
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++)
+                System.out.print(arr[i][j] + " ");
+            System.out.println();
+        }
+    }
+    
+}
